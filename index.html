@@ -6,100 +6,72 @@
     <title>Rachel Winstead | Personal Portfolio</title>
     <meta
       name="description"
-      content="A warm, modern single-page personal website with story, skills, and contact sections."
+      content="A refined single-page portfolio that reflects a warm, modern reference design."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
-      <a class="brand" href="#home">Rachel</a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#story" class="nav-link">My Story</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#connect" class="nav-link">Let's Connect</a>
-      </nav>
-    </header>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">Rachel Winstead</a>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#connect" class="nav-link">Connect</a>
+        </nav>
+      </header>
 
-    <main>
-      <section id="home" class="hero section">
-        <div class="hero-copy">
-          <p class="eyebrow">Creative thinker • thoughtful builder</p>
-          <h1>Designing meaningful experiences with calm confidence.</h1>
-          <p class="hero-text">
-            I’m Rachel Winstead, a developer and storyteller who enjoys turning ideas into
-            clear, beautiful digital experiences that feel welcoming and intentional.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#connect">Start a Conversation</a>
-            <a class="button secondary" href="#skills">Explore My Skills</a>
+      <main id="home">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Portfolio • Designer & Developer</p>
+            <h1>Creating calm, thoughtful experiences for the web.</h1>
+            <p class="hero-text">
+              I blend design and development to build websites that feel welcoming, polished, and easy to use.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#connect">Let’s talk</a>
+              <a class="button secondary" href="#skills">View highlights</a>
+            </div>
           </div>
-        </div>
-        <div class="hero-visual">
-          <img src="assets/placeholder-portrait.svg" alt="Placeholder portrait illustration" />
-        </div>
-      </section>
 
-      <section id="story" class="section content-section">
-        <div class="section-heading">
-          <p class="eyebrow">My Story</p>
-          <h2>Built on curiosity, care, and continuous learning.</h2>
-        </div>
-        <div class="story-card">
-          <p>
-            My path has always been shaped by the desire to make digital spaces feel both useful
-            and human. I enjoy solving problems with empathy, writing thoughtful code, and creating
-            work that helps people feel seen and supported.
-          </p>
-          <p>
-            Whether I’m refining a page, building a system, or learning a new tool, I’m guided by
-            the idea that the best work is clear, intentional, and made to last.
-          </p>
-        </div>
-      </section>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="portrait-frame">
+              <img src="assets/placeholder-portrait.svg" alt="Illustrated portrait" />
+            </div>
+          </div>
+        </section>
 
-      <section id="skills" class="section content-section">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Focused on thoughtful web experiences.</h2>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, and responsive layouts that feel polished across devices.</p>
+        <section class="panel-grid" id="about">
+          <article class="panel tall">
+            <p class="eyebrow">About</p>
+            <h2>Built around empathy, clarity, and attention to detail.</h2>
+            <p>I care about creating digital work that feels intentional, useful, and human.</p>
           </article>
-          <article class="skill-card">
-            <h3>Design Thinking</h3>
-            <p>Crafting clear messaging, visual rhythm, and user-friendly interactions.</p>
+          <article class="panel" id="skills">
+            <p class="eyebrow">Skills</p>
+            <h3>Frontend, visual design, and thoughtful problem solving.</h3>
+            <p>HTML, CSS, JavaScript, responsive layouts, and polished user experiences.</p>
           </article>
-          <article class="skill-card">
-            <h3>Problem Solving</h3>
-            <p>Turning ideas into practical, elegant solutions with a calm and organized approach.</p>
+          <article class="panel" id="connect">
+            <p class="eyebrow">Connect</p>
+            <h3>Ready to build something meaningful together?</h3>
+            <p>Let’s talk about your next idea, collaboration, or website refresh.</p>
+            <a class="button primary" href="mailto:rachel@example.com">Email me</a>
           </article>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <section id="connect" class="section content-section">
-        <div class="section-heading">
-          <p class="eyebrow">Let's Connect</p>
-          <h2>Let’s build something meaningful together.</h2>
-        </div>
-        <div class="connect-card">
-          <p>Feel free to reach out if you’d like to collaborate, chat, or explore a new idea.</p>
-          <a class="button primary" href="mailto:rachel@example.com">Email Me</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© <span id="year"></span> Rachel Winstead. Crafted with care.</p>
-    </footer>
+      <footer class="footer">
+        <p>© <span id="year"></span> Rachel Winstead. Crafted with care.</p>
+      </footer>
+    </div>
   </body>
 </html>
